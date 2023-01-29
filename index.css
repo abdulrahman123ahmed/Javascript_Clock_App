@@ -1,0 +1,143 @@
+body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock-app {
+    width: 500px;
+    height: 500px;
+    border: 10px solid #00818a;
+    border-radius: 50%;
+    position: relative;
+}
+.clock-app .point {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #00818a;
+    border-radius: 50%;
+}
+.clock-app .hour {
+    font-size: 30px;
+    color: #00818a;
+    position: absolute;
+}
+.clock-app .hour-1 {
+    top: 40px;
+    right: 130px;
+}
+.clock-app .hour-2 {
+    top: 125px;
+    right: 45px;
+}
+.clock-app .hour-3 {
+    top: 235px;
+    right: 10px;
+}
+.clock-app .hour-4 {
+    top: 345px;
+    right: 45px;
+}
+.clock-app .hour-5 {
+    top: 430px;
+    right: 130px;
+}
+.clock-app .hour-6 {
+    bottom: 10px;
+    left: 240px;
+}
+.clock-app .hour-7 {
+    top: 430px;
+    left: 130px;
+}
+.clock-app .hour-8 {
+    top: 345px;
+    left: 45px;
+}
+.clock-app .hour-9 {
+    top: 235px;
+    left: 10px;
+}
+.clock-app .hour-10 {
+    top: 125px;
+    left: 45px;
+}
+.clock-app .hour-11 {
+    top: 40px;
+    left: 130px;
+}
+.clock-app .hour-12 {
+    top: 10px;
+    left: 240px;
+}
+.wrapper1 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+}
+.wrapper1 :is(.minute-hand, .hour-hand) {
+    position: relative;
+}
+.wrapper1 .minute-hand .hand {
+    width: 4px;
+    height: 200px;
+    background-color: #00818a;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+.wrapper1 .minute-hand .arrow {
+    font-size: 50px;
+    color: #00818a;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+}
+.wrapper2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+}
+.wrapper2 .hour-hand .hand {
+    width: 4px;
+    height: 150px;
+    background-color: #00818a;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+.wrapper2 .hour-hand .arrow {
+    font-size: 50px;
+    color: #00818a;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+}
+.wrapper3 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    border-radius: 50%;
+}
+.wrapper3 .second-hand .hand {
+    width: 2px;
+    height: 175px;
+    background-color: #00818a;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+}
